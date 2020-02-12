@@ -39,7 +39,6 @@ u("#searchButton").on("click", function (){
 
     //declaring array as ingredientLines//
     ingredientList =rList;
-    console.log(ingredientList)
 
     // appending ingredient list to output div//
     outputDiv.append("<h4>Ingredient List</h3>")
@@ -49,9 +48,18 @@ u("#searchButton").on("click", function (){
     for(i = 0; i < ingredientList.length; i++) {
       var a = u("<li>");
       a.text(ingredientList[i])
-      console.log(ingredientList[i])
       ulIngredients.append(a)
     }
   })
 
 })
+
+
+u("#clearBtn").on("click", function() {
+  clearResults()
+  
+})
+
+function clearResults() {
+  u(".searchResult").empty();
+}
