@@ -1,10 +1,10 @@
-//master branch
 var ingredient;
 
 var ingredientList = [];
 
 
 u("#searchButton").on("click", function (){
+  clearResults()
 
   //declares ingredient as user input//
   var ingredient = document.querySelector("#ingredientSearch").value;
@@ -57,3 +57,12 @@ u("#searchButton").on("click", function (){
 
 })
 
+
+u("#clearBtn").on("click", function() {
+  clearResults()
+  
+})
+
+function clearResults() {
+  u(".searchResult").empty();
+}
