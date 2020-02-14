@@ -57,7 +57,6 @@ u("#null").on("click", function (){
 
 })
 
-
 u("#clearBtn").on("click", function() {
   clearResults()
   
