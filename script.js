@@ -22,11 +22,11 @@ u("#searchButton").on("click", function (){
     console.log (response)
 
     for(i = 0; i< response.data.hits.length; i++){
-      console.log(response.data.hits[i].recipe.label)
+      //console.log(response.data.hits[i].recipe.label)
 
       var rLabel = response.data.hits[i].recipe.label;
       var rImage = response.data.hits[i].recipe.image;
-      //var rList = response.data.hits[i].recipe.ingredientLines;
+      var rList = response.data.hits[i].recipe.ingredientLines;
       
       var outputDiv = u(".searchResult").append("<div>");
       var recipeTitle = u("<h4>").text(rLabel);
@@ -35,24 +35,15 @@ u("#searchButton").on("click", function (){
       var recipePreview = u("<img>").attr("src", rImage);
       recipePreview.attr("style", "width:150px;height:150px;")
       outputDiv.append(recipePreview)
+      var ingredientTitle = u("<h4>Ingredient List</h4>");
+      outputDiv.append(ingredientTitle);
+      var ulIngredients = u("<ul>");
+      var sampleli = u("<li>");
+      ulIngredients.append(sampleli);
+      outputDiv.append(ulIngredients);
+      
     }
 
-
-    //declaring array as ingredientLines//
-    //ingredientList =rList;
-    //console.log(ingredientList)
-
-    // appending ingredient list to output div//
-    //outputDiv.append("<h4>Ingredient List</h3>")
-    //var ulIngredients = outputDiv.append("<ul>");
-
-    //for loop to create li for each ingredient//
-    //for(i = 0; i < ingredientList.length; i++) {
-      //var a = u("<li>");
-      //a.text(ingredientList[i])
-      //console.log(ingredientList[i])
-      //ulIngredients.append(a)
-    //}
   })
 
 })
