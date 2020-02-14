@@ -127,7 +127,25 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
-
+  .wrapper {
+    overflow: hidden;
+  }
+  
+  .sliding-background {
+    background: url("https://previews.123rf.com/images/rawpixel/rawpixel1808/rawpixel180804247/116130371-dishes-for-a-ramadan-feast.jpg") repeat-x;
+    height: 560px;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
