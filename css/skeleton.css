@@ -125,7 +125,7 @@ html {
   font-size: 3.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: Arial;
+  font-family: 'Galada', cursive;
   color: rgb(15, 13, 92); }
 
 .container {
@@ -419,7 +419,7 @@ hr {
 
 
 .center {
-  margin-left: 6em
+  margin-left: 8em
 }
 
 /* Media Queries
