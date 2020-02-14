@@ -70,29 +70,22 @@ function something(){
   var rLabel = document.querySelector("#ingredientSearch").value;
   var rImage = "https://images.media-allrecipes.com/userphotos/6858360.jpg"
   var rList;
-
-  ingredientList = ["ingredient a", "ingredient b","ingredient c", "ingredient d", "ingredient e"];
   
   var outputDiv = u(".searchResult").append("<div>");
-  var recipeTitle = u("<h4>").text(rLabel);
+  var recipeTitle = u("<h4>").text(rLabel).addClass("recipe-title");
   outputDiv.append(recipeTitle)
 
-  var recipePreview = u("<img>").attr("src", rImage);
+  var recipePreview = u("<img>").attr("src", rImage).addClass("img-thumbnail");
   recipePreview.attr("style", "width:150px;height:150px;")
   outputDiv.append(recipePreview)
 
-  outputDiv.append("<h4>Ingredient List</h3>")
-  var ulIngredients = outputDiv.append("<ul>");
+  var insturctionsTitle = u("<h5>Ingredient List</h5>").addClass("instructions-title");
 
-  //for loop to create li for each ingredient//
-for(j = 0; j < ingredientList.length; j++) {
-  var a = u("<li>");
-  a.text(ingredientList[j])
-  console.log(ingredientList[j])
-  ulIngredients.append(a)
-}
+  outputDiv.append(insturctionsTitle);
+  var insturctions = u("<p>").addClass("instructions").text("Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes.\r\nIn a large skillet over medium-high heat, add the olive oil and heat until the oil starts to shimmer. Add the garlic and cook, stirring, until fragrant, 1 to 2 minutes. Add the chopped tomatoes, red chile flakes, Italian seasoning and salt and pepper to taste. Bring to a boil and cook for 5 minutes. Remove from the heat and add the chopped basil.\r\nDrain the pasta and add it to the sauce. Garnish with Parmigiano-Reggiano flakes and more basil and serve warm.")
 
-var videourl = u("<iframe>").attr("src", "https://www.youtube.com/embed/-rdt5XNvPkc");
+  outputDiv.append(insturctions)
+var videourl = u("<iframe>").attr("src", "https://www.youtube.com/embed/-rdt5XNvPkc").addClass("recipe-video");
 outputDiv.append(videourl)
 }
 
