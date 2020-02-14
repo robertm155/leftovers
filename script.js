@@ -8,7 +8,7 @@ u("#searchButton").on("click", function (){
 
   //declares ingredient as user input//
   var ingredient = document.querySelector("#ingredientSearch").value;
-
+  
   var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + ingredient;
   console.log(ingredient)
   console.log(queryURL)
