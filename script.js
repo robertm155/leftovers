@@ -27,6 +27,7 @@ u("#searchButton").on("click", function (){
       var rLabel = response.data.hits[i].recipe.label;
       var rImage = response.data.hits[i].recipe.image;
       var rList = response.data.hits[i].recipe.ingredientLines;
+      console.log(rList)
       
       var outputDiv = u(".searchResult").append("<div>");
       var recipeTitle = u("<h4>").text(rLabel);
@@ -38,9 +39,16 @@ u("#searchButton").on("click", function (){
       var ingredientTitle = u("<h4>Ingredient List</h4>");
       outputDiv.append(ingredientTitle);
       var ulIngredients = u("<ul>");
-      var sampleli = u("<li>");
-      ulIngredients.append(sampleli);
+      //var sampleli = u("<li>ingredient 1</li>");
+      //ulIngredients.append(sampleli);
       outputDiv.append(ulIngredients);
+
+      for(j = 0; j < rList.length; j++) {
+        var a = u("<li>");
+        a.text(rList[j])
+        ulIngredients.append(a)
+        //outputDiv.append(ulIngredients)
+      }
       
     }
 
