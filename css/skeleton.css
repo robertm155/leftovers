@@ -74,6 +74,31 @@
   margin-right: .5rem;
 }
 
+.c-recipe-title,
+.c-img-thumnail {
+  display: table-cell;
+  width:33%;
+  margin-left: .5rem;
+}
+
+.c-instructions-title {
+  display: table-cell;
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  display:inline;
+  transform: translateX(-50%);
+}
+
+.c-instructions {
+  display: table-cell;
+  width: 33%;
+  position: absolute;
+  margin-top: 3.5rem;
+  left: 33%;
+  display:inline;
+  transform: translateX(-50%);
+}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
