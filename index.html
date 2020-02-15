@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" type="text/css" href="css\style.css"/>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Document</title>
 </head>
 <body>
-    <div class="header container" id="Main-head">
-        <header><h3>Leftovers ?</h3></header>
+    <div class="wrapper">
+        <div class="sliding-background"></div>
+      </div>
+    <div class="header-container center" id="Main-head">
+        <header>Leftovers ?</header>
     </div>
     <br><br><br><br>
     <br>
@@ -27,23 +31,19 @@
                 <div class="row">
                     Ingredient:
                      <br>
-                    <input type="text" width="100%" id="ingredientSearch" placeholder="Ingredients!">
+                    <input type="text" width="100%" id="ingredientSearch" placeholder="Just one!">
                     </div>
                     <br>
                     <div class="row">
                     <button type="button" id="searchButton" class="btn btn-primary btn-sm">Search</button>
-                    <button type="button" id="clearBtn" class="btn btn-secondary btn-sm">Clear</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Clear</button>
                 </div>
-                <a class="button button-primary" href="#">Anchor button</a>
+            
             
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-        <div class="one-half column searchResult"></div>
+        <div class="col-sm-2 searchResult"></div>
         </div>
-        
-    
     </body>
     <script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
