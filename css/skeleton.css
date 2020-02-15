@@ -41,6 +41,39 @@
   float: left;
   box-sizing: border-box; }
 
+.recipe-title,
+.img-thumnail {
+  display: table-cell;
+  width:33%;
+  margin-left: .5rem;
+}
+
+.instructions-title {
+  display: table-cell;
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  display:inline;
+  transform: translateX(-50%);
+}
+
+.instructions {
+  display: table-cell;
+  width: 33%;
+  position: absolute;
+  margin-top: 3.5rem;
+  left: 33%;
+  display:inline;
+  transform: translateX(-50%);
+}
+
+.recipe-video {
+  display: table-cell;
+  width:33%;
+  float: right;
+  margin-right: .5rem;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
