@@ -154,6 +154,35 @@ html {
       transform: translate3d(-1692px, 0, 0);
     }
   }
+
+
+  /* Navbar */
+
+
+  .topnav a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  
+    
+  }
+  
+  .topnav a:hover {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #ddd;
+    color: black;
+   
+  }
+  
+  .topnav a.active {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    color: white;
+  
+  }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -419,7 +448,8 @@ hr {
 
 
 .center {
-  margin-left: 8em
+  margin-left: 40%;
+
 }
 
 /* Media Queries
@@ -436,7 +466,15 @@ there.
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (max-width: 550px) {
+
+  .sliding-background {
+    height: 300px;
+    width: 5076px;
+  } 
+  
+}
+
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
