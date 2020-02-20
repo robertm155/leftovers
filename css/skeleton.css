@@ -41,6 +41,7 @@
   float: left;
   box-sizing: border-box; }
 
+@media screen and (min-width: 1000px) {
 .recipe-title,
 .img-thumnail {
   display: table-cell;
@@ -98,7 +99,7 @@
   left: 33%;
   display:inline;
   transform: translateX(-50%);
-}
+}}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
