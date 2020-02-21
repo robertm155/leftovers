@@ -1,0 +1,60 @@
+
+ #startPage{
+  background-image: url("../images/large-bg.jpg");
+} 
+
+.text{
+  color: black;
+  line-height: 20px;
+}
+
+#text{
+  color: white;
+}
+
+p{
+  color: black;
+}
+
+.card-p{
+  line-height: 20px;
+}
+
+ .output{
+  border-bottom: solid 1px #ee6e73;
+}
+
+.recipe-select-mobile{
+  display: none;
+}
+
+/* .recipe-select{
+  margin-bottom: 148px;
+} */
+
+.searchForm{
+  display: none;
+}
+
+.searchResult{
+  display: none;
+  margin-bottom: 555px;
+}
+
+@media only screen and (max-width: 600px) {
+  .video{
+    display: none;
+  }
+  .recipe-select-mobile{
+    display: block;
+  }
+  .recipe-select{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+  #startPage{
+    background-image: url("../images/mobile-bg.jpg");
+  } 
+}
