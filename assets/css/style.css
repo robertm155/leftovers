@@ -1,17 +1,26 @@
-body{
-  background: url("https://previews.123rf.com/images/rawpixel/rawpixel1808/rawpixel180804247/116130371-dishes-for-a-ramadan-feast.jpg");
-}
+
+ #startPage{
+  background-image: url("../images/large-bg.jpg");
+} 
 
 .text{
   color: black;
   line-height: 20px;
 }
 
+#text{
+  color: white;
+}
+
 p{
   color: black;
 }
 
-.output{
+.card-p{
+  line-height: 20px;
+}
+
+ .output{
   border-bottom: solid 1px #ee6e73;
 }
 
@@ -19,8 +28,17 @@ p{
   display: none;
 }
 
+/* .recipe-select{
+  margin-bottom: 148px;
+} */
+
 .searchForm{
   display: none;
+}
+
+.searchResult{
+  display: none;
+  margin-bottom: 555px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,4 +51,10 @@ p{
   .recipe-select{
     display: none;
   }
+  footer{
+    display: none;
+  }
+  #startPage{
+    background-image: url("../images/mobile-bg.jpg");
+  } 
 }

@@ -1,7 +1,7 @@
+//function to alternate between dark and light mode
 u("#mode").on("click", function(){
     if(u("#mode").text() == "Dark Mode"){
         u("#mode").text("Light Mode");
-        //document.querySelector("p").style.color="white";
         document.querySelector("body").style.background = "rgb(32, 32, 32)";
     }else{
         u("#mode").text("Dark Mode");
@@ -16,6 +16,7 @@ u("#mealDB").on("click", function(){
     document.querySelector(".recipe-select-mobile").style.display="none";
     document.querySelector(".aOb").style.display="none";
     document.querySelector(".searchForm").style.display="block";
+    document.querySelector(".searchResult").style.display="block";
 })
 
 u("#coctailDB").on("click", function(){
@@ -24,4 +25,5 @@ u("#coctailDB").on("click", function(){
     document.querySelector(".recipe-select-mobile").style.display="none";
     document.querySelector(".aOb").style.display="none";
     document.querySelector(".searchForm").style.display="block";
+    document.querySelector(".searchResult").style.display="block";
 })
